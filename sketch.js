@@ -17,6 +17,8 @@ function draw() {
 	player.moveTowards(mouse);
 	ball.x = random(0,500);
 	ball.y = random(0,500);
-	if (player.overlaps(ball)) points = points + 1
+	if (player.overlaps(ball)) points = points + 1;
+	print(`points = ${points}`);
+	text(`points = ${points}`, 50, 50);
 	//}
 }
